@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services | Amigoestech LLP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-left">
+    <img src="assets/images/logo.png" alt="Amigoestech LLP Logo" class="logo">
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav id="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+<!-- 🌗 Light/Dark Toggle -->
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+</header>
+
+<div class="hero">
+  <h1>Our Services</h1>
+  <p>IT Services & Consulting Solutions</p>
+</div>
+
+
+
+
+<section>
+<div class="section-title">
+  <h2>Our Services</h2>
+  <p>Solutions designed to help your business grow</p>
+</div>
+
+  <div class="service-box">
+    <h2>Business Analytics</h2>
+    <p>
+      We help organizations transform data into actionable insights that drive
+      informed decision-making and business growth.
+    </p>
+    <ul>
+      <li>Data analysis & reporting</li>
+      <li>Dashboard & KPI development</li>
+      <li>Performance analytics</li>
+    </ul>
+  </div>
+
+  <div class="service-box">
+    <h2>Cloud & Mobile Business Intelligence</h2>
+    <p>
+      Our cloud and mobile BI solutions provide secure, real-time access to
+      analytics anytime and anywhere.
+    </p>
+    <ul>
+      <li>Cloud BI solutions</li>
+      <li>Mobile dashboards</li>
+      <li>Real-time reporting</li>
+    </ul>
+  </div>
+
+  <div class="service-box">
+    <h2>Data Services</h2>
+    <p>
+      We offer comprehensive data services to manage, process, and visualize
+      business data effectively.
+    </p>
+    <ul>
+      <li>Data integration & cleansing</li>
+      <li>Data visualization</li>
+      <li>Data management solutions</li>
+    </ul>
+  </div>
+
+  <div class="service-box">
+    <h2>IT Solutions & Consulting</h2>
+    <p>
+      Our consulting services help businesses align technology with strategic
+      objectives for long-term success.
+    </p>
+    <ul>
+      <li>IT strategy & planning</li>
+      <li>Custom IT solutions</li>
+      <li>Digital transformation</li>
+    </ul>
+  </div>
+<div class="services">
+  <div class="card">
+    <i class="fas fa-chart-line"></i>
+    <h3>Business Analytics</h3>
+    <p>Transform data into actionable insights for smarter decisions.</p>
+  </div>
+
+  <div class="card">
+    <i class="fas fa-cloud"></i>
+    <h3>Cloud & Mobile BI</h3>
+    <p>Real-time cloud-based business intelligence solutions.</p>
+  </div>
+
+  <div class="card">
+    <i class="fas fa-database"></i>
+    <h3>Data Services</h3>
+    <p>Data integration, visualization, and management services.</p>
+  </div>
+
+  <div class="card">
+    <i class="fas fa-laptop-code"></i>
+    <h3>IT Consulting</h3>
+    <p>Align technology with business strategy and growth.</p>
+  </div>
+</div>
+
+</section>
+<script>
+  function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("show");
+  }
+</script>
+<!-- Toggle light script-->
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+
+    // Save preference
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      document.querySelector(".theme-toggle").textContent = "🌞";
+    } else {
+      localStorage.setItem("theme", "light");
+      document.querySelector(".theme-toggle").textContent = "🌙";
+    }
+  }
+
+  // Load saved theme
+  window.onload = () => {
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+      document.querySelector(".theme-toggle").textContent = "🌞";
+    }
+  };
+</script>
+<footer class="site-footer">
+  <div class="footer-content">
+    <img src="assets/images/logo.png" alt="Amigoestech LLP Logo" class="footer-logo">
+
+    <p>
+      Amigoestech LLP is an IT services & consulting company based in
+      Nagpur, Maharashtra, India, specializing in business analytics,
+      cloud & data-driven solutions.
+    </p>
+<div class="footer-social">
+  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  <a href="#"><i class="fab fa-x-twitter"></i></a>
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+
+    <p class="copyright">
+      © 2026 Amigoestech LLP. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+
+</body>
+</html>
